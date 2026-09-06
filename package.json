@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Landing page for RivetCRM",
   "scripts": {
+    "start": "node server.js",
     "serve": "python3 -m http.server 8000",
     "build": "echo 'No build required for static site'"
   },
