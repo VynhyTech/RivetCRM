@@ -1,2 +1,0 @@
-# RivetCRM
-CRM landing page
