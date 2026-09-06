@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.env
+
+Sitemap: https://rivetcrm.com/sitemap.xml
