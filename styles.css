@@ -79,3 +79,10 @@ h1, h2, h3, p { margin-top: 0; }h1, h2, h3 { letter-spacing: -.06em; }h1 { font-
 @media (max-width: 420px) {
 	h1 { font-size: clamp(2.45rem, 12vw, 3rem) !important; }
 }
+
+.brand { gap: 8px; height: 54px; overflow: visible; width: auto; }
+.brand-mark { display: block; flex: 0 0 40px; height: 42px; overflow: hidden; position: relative; width: 40px; }
+.brand-mark img { filter: none; height: 78px; left: -44px; mix-blend-mode: normal; object-fit: contain; position: absolute; top: -15px; width: 136px; }
+.site-footer .brand-mark img { filter: none; mix-blend-mode: normal; }
+.brand-wordmark { color: var(--ink); font-size: 1.3rem; font-weight: 700; letter-spacing: .02em; line-height: 1; }
+.site-footer .brand-wordmark { color: var(--white); }
