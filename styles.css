@@ -85,3 +85,23 @@ h1, h2, h3, p { margin-top: 0; }h1, h2, h3 { letter-spacing: -.06em; }h1 { font-
 .brand img.footer-mark { display: block; filter: none; height: 40px; left: auto; max-width: none; mix-blend-mode: normal; object-fit: contain; position: static; top: auto; width: 36px; }
 .footer-wordmark { color: var(--white); font-size: 1.1rem; font-weight: 700; line-height: 1; }
 .button-orange, .popular { color: var(--ink); }
+.footer-links a { font-size: 1rem !important; }
+.footer-links b { font-size: .75rem !important; }
+.brand img.footer-mark { height: 56px; width: 50px; }
+.footer-wordmark { font-size: 1.35rem; }
+
+.brand { height: 78px; width: 190px; }
+.hero { gap: clamp(32px, 4vw, 58px); grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.hero-board { min-height: 500px; padding: 28px; transform: rotate(1deg); }
+.footer-links { column-gap: 36px; }
+.footer-links div { gap: 17px; }
+.footer-links a { font-size: 1.125rem !important; }
+.footer-links b { font-size: .875rem !important; }
+.brand img.footer-mark { height: 68px; width: 62px; }
+.footer-wordmark { font-size: 1.5rem; }
+
+@media (max-width: 800px) {
+	.brand { height: 66px; width: 164px; }
+	.hero-board { min-height: 0; padding: 20px; transform: none; }
+	.brand img.footer-mark { height: 60px; width: 55px; }
+}
