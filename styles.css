@@ -99,6 +99,7 @@ h1, h2, h3, p { margin-top: 0; }h1, h2, h3 { letter-spacing: -.06em; }h1 { font-
 .footer-links b { font-size: .875rem !important; }
 .brand img.footer-mark { height: 68px; width: 62px; }
 .footer-wordmark { font-size: 1.5rem; }
+.footer-links div { align-items: center; text-align: center; }
 
 @media (max-width: 800px) {
 	.brand { height: 66px; width: 164px; }
