@@ -1,6 +1,31 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const siteNav = document.querySelector('.site-nav');
 const billingToggle = document.querySelector('#billing-toggle');
+const messageLauncher = document.querySelector('.message-us');
+const messageDialog = document.querySelector('#message-dialog');
+const messageForm = document.querySelector('#message-form');
+
+messageLauncher?.addEventListener('click', () => messageDialog?.showModal());
+messageDialog?.querySelector('.message-close')?.addEventListener('click', () => messageDialog.close());
+messageDialog?.addEventListener('click', (event) => {
+  if (event.target === messageDialog) messageDialog.close();
+});
+
+messageForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (!messageForm.reportValidity()) return;
+
+  const fields = new FormData(messageForm);
+  const body = [
+    `Name: ${fields.get('name')}`,
+    `Number: ${fields.get('phone')}`,
+    `Email: ${fields.get('email')}`,
+    `Agency Name: ${fields.get('agency')}`,
+    `Comments/Remarks: ${fields.get('comments') || 'Not provided'}`
+  ].join('\n');
+  const subject = encodeURIComponent('RivetCRM enquiry');
+  window.location.href = `mailto:contact@rivet-crm.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+});
 
 document.querySelectorAll('body *').forEach((element) => {
   if (element.children.length > 0) return;
