@@ -364,3 +364,23 @@ h1, h2 { text-wrap: balance; }
 @media (max-width: 560px) {
 	.pricing-grid { grid-template-columns: 1fr; }
 }
+
+.hero-photo {
+	margin: -24px auto 0;
+	max-width: 1400px;
+}
+.hero-photo img {
+	aspect-ratio: 16 / 9;
+	display: block;
+	object-fit: cover;
+	object-position: 68% 46%;
+	width: 100%;
+}
+
+@media (max-width: 800px) {
+	.hero-photo { margin-top: 0; }
+	.hero-photo img {
+		aspect-ratio: 4 / 3;
+		object-position: 72% 48%;
+	}
+}
