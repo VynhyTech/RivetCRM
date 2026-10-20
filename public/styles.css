@@ -367,20 +367,35 @@ h1, h2 { text-wrap: balance; }
 
 .hero-photo {
 	margin: -24px auto 0;
-	max-width: 1400px;
+	max-width: 960px;
 }
 .hero-photo img {
-	aspect-ratio: 3 / 1;
 	display: block;
-	object-fit: cover;
-	object-position: 68% 46%;
+	height: auto;
 	width: 100%;
 }
 
 @media (max-width: 800px) {
 	.hero-photo { margin-top: 0; }
-	.hero-photo img {
-		aspect-ratio: 16 / 9;
-		object-position: 72% 48%;
-	}
 }
+
+/* ---- Additions (integration pass) ---- */
+.skip-link { background: var(--ink); color: var(--white); left: 12px; padding: 10px 14px; position: absolute; top: -60px; z-index: 100; }
+.skip-link:focus { top: 12px; }
+.hp { height: 1px; left: -9999px; opacity: 0; position: absolute; width: 1px; }
+.message-hint { color: var(--muted); font-size: .85rem; margin: 14px 0 0; }
+.message-status { font-size: .95rem; margin: 10px 0 0; min-height: 1.4em; }
+a:focus-visible, button:focus-visible, .button:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+.hero-photo picture { display: block; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+/* Mobile menu: anchor to the header (it was positioned against the page at a fixed 70px) and keep Sign in reachable */
+@media (max-width: 800px) {
+  .site-header { position: relative; }
+  .site-nav { top: 100%; }
+  .site-nav .sign-in { display: block; }
+}
+
+.notfound { padding-bottom: 12vh; padding-top: 12vh; }

@@ -4,10 +4,17 @@
   "description": "Landing page for RivetCRM",
   "scripts": {
     "start": "node server.js",
-    "serve": "python3 -m http.server 8000",
-    "build": "echo 'No build required for static site'"
+    "check": "node --check server.js && node --check public/script.js"
   },
-  "keywords": ["crm", "real-estate", "dubai"],
+  "keywords": [
+    "crm",
+    "real-estate",
+    "dubai"
+  ],
   "author": "RivetCRM",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true
 }
