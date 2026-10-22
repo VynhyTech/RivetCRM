@@ -193,7 +193,7 @@ h1, h2, h3, p { margin-top: 0; }h1, h2, h3 { letter-spacing: -.06em; }h1 { font-
 .social-follow { --social-blue: #286bb2; background: #ececea; color: #424540; }
 .social-follow-inner { align-items: center; display: flex; justify-content: space-between; min-height: 100px; }
 .social-follow p { font-size: 1rem; margin: 0; text-transform: uppercase; }
-.social-follow nav { display: flex; gap: 16px; }
+.social-follow-icons { display: flex; gap: 16px; }
 .social-icon { align-items: center; border: 1px solid var(--social-blue); border-radius: 50%; color: var(--social-blue); display: inline-flex; font-family: Arial, sans-serif; font-size: 1.15rem; font-weight: 700; height: 48px; justify-content: center; width: 48px; }
 .social-icon svg { fill: currentColor; height: 22px; width: 22px; }
 .social-icon rect, .social-icon circle { fill: none; stroke: currentColor; stroke-width: 2; }
@@ -207,7 +207,7 @@ h1, h2, h3, p { margin-top: 0; }h1, h2, h3 { letter-spacing: -.06em; }h1 { font-
 	.message-fields { grid-template-columns: 1fr; }
 	.message-comments { grid-column: auto; }
 	.social-follow-inner { align-items: flex-start; flex-direction: column; gap: 16px; padding-bottom: 20px; padding-top: 20px; }
-	.social-follow nav { flex-wrap: wrap; gap: 12px; }
+	.social-follow-icons { flex-wrap: wrap; gap: 12px; }
 }
 
 :root {
